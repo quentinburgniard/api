@@ -1,0 +1,13 @@
+{
+    host: api,
+    proxy: {
+        enabled: true,
+        ssl: true,
+        host: clients.digital-leman.com,
+        port: 80
+    },
+    cron: true,
+    admin: {
+        path: /
+    }
+}

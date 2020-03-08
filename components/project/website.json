@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "websites",
+  "info": {
+    "name": "website",
+    "icon": "laptop"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

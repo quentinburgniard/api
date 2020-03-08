@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "languages",
+  "info": {
+    "name": "language",
+    "icon": "bold"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "maxLength": 15
+    },
+    "code": {
+      "type": "string",
+      "required": true,
+      "maxLength": 2,
+      "minLength": 2
+    }
+  }
+}

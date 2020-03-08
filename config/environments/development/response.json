@@ -1,0 +1,8 @@
+{
+  "gzip": {
+    "enabled": true
+  },
+  "poweredBy": {
+    "enabled": false
+  }
+}

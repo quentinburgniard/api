@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "identities",
+  "info": {
+    "name": "identity"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "birthdate": {
+      "type": "date",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "string",
+      "maxLength": 15
+    },
+    "email": {
+      "type": "email"
+    },
+    "profession": {
+      "type": "string",
+      "required": false
+    },
+    "firstName": {
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "maxLength": 15
+    },
+    "lastName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 15
+    }
+  }
+}

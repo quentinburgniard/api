@@ -1,0 +1,11 @@
+{
+  "proxy": {
+    "enabled": false
+  },
+  "cron": {
+    "enabled": false
+  },
+  "admin": {
+    "autoOpen": false
+  }
+}

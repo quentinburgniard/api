@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/curriculum-vitaes",
+      "handler": "curriculum-vitae.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/curriculum-vitaes/count",
+      "handler": "curriculum-vitae.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/curriculum-vitaes/:id",
+      "handler": "curriculum-vitae.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/curriculum-vitaes",
+      "handler": "curriculum-vitae.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/curriculum-vitaes/:id",
+      "handler": "curriculum-vitae.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/curriculum-vitaes/:id",
+      "handler": "curriculum-vitae.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

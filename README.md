@@ -1,8 +1,3 @@
-# API
-API powered by Strapi
+# Strapi application
 
-## Quick Start
-
-```
-docker build -t registry.quentinburgniard.com/api:0.1 .
-```
+A quick description of your strapi application

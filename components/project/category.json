@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "categories",
+  "info": {
+    "name": "category",
+    "icon": "folder"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 15
+    },
+    "slug": {
+      "type": "string",
+      "maxLength": 15,
+      "unique": true
+    }
+  }
+}

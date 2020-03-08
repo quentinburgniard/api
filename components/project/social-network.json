@@ -1,0 +1,16 @@
+{
+  "connection": "default",
+  "collectionName": "socialNetworks",
+  "info": {
+    "name": "socialNetwork",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "maxLength": 15,
+      "unique": true
+    }
+  }
+}

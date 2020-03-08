@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "curriculumVitaes",
+  "info": {
+    "name": "curriculumVitae"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "location": {
+      "type": "string",
+      "maxLength": 15,
+      "required": true
+    },
+    "object": {
+      "type": "string",
+      "maxLength": 25,
+      "required": true
+    },
+    "website": {
+      "type": "component",
+      "repeatable": false,
+      "component": "project.website"
+    },
+    "footer": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "socialNetwork": {
+      "type": "component",
+      "repeatable": true,
+      "component": "project.social-network"
+    },
+    "identity": {
+      "model": "identity"
+    }
+  }
+}

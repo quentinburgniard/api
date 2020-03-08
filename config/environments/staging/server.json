@@ -1,15 +1,12 @@
 {
-  "host": "api",
+  "host": "clients.quentinburgniard.fr",
   "port": "${process.env.PORT || 1337}",
   "production": true,
   "proxy": {
-    "enabled": true,
-    "ssl": true,
-    "host": "clients.digital-leman.com",
-    "port": 443
+    "enabled": true
   },
   "cron": {
-    "enabled": true
+    "enabled": false
   },
   "admin": {
     "autoOpen": false

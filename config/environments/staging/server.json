@@ -1,12 +1,9 @@
 {
-  "host": "clients.quentinburgniard.fr",
-  "port": "${process.env.PORT || 1337}",
+  "host": "api",
+  "port": "1337",
   "production": true,
   "proxy": {
     "enabled": true
-  },
-  "cron": {
-    "enabled": false
   },
   "admin": {
     "autoOpen": false

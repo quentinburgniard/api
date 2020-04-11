@@ -3,7 +3,10 @@
   "port": "1337",
   "production": true,
   "proxy": {
-    "enabled": true
+    "enabled": true,
+    "ssl": true,
+    "host": "api.quentinburgniard.fr",
+    "port": 443
   },
   "admin": {
     "autoOpen": false

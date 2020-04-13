@@ -12,12 +12,7 @@
     "rolling": false
   },
   "logger": {
-    "level": "info",
-    "exposeInContext": true,
-    "requests": false
-  },
-  "parser": {
-    "enabled": true,
-    "multipart": true
+    "level": "debug",
+    "requests": true
   }
 }

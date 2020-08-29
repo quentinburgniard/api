@@ -11,35 +11,31 @@
   },
   "attributes": {
     "launchDate": {
-      "type": "date",
-      "required": true
+      "type": "date"
     },
-    "Name": {
+    "name": {
       "type": "string",
-      "required": true,
       "maxLength": 25
     },
     "url": {
       "type": "string"
     },
     "image": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
-      "plugin": "upload",
-      "required": false
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload"
     },
     "shortDescription": {
-      "type": "richtext",
-      "required": true
+      "type": "richtext"
     },
     "longDescription": {
-      "type": "richtext",
-      "required": true
+      "type": "richtext"
     },
-    "Category": {
-      "type": "component",
-      "repeatable": true,
-      "component": "project.category"
+    "technicalDescription": {
+      "type": "richtext"
     }
   }
 }

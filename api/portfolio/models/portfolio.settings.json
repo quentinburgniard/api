@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolios",
+  "info": {
+    "name": "Portfolio"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 25
+    }
+  }
+}

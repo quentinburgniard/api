@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "hestias",
+  "info": {
+    "name": "Hestia"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hestia.section"
+    },
+    "Subtitle": {
+      "type": "richtext"
+    },
+    "QuestionsAndAnswers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hestia.questions-and-answers"
+    },
+    "ContactTitle": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Phonenumber": {
+      "type": "string"
+    }
+  }
+}

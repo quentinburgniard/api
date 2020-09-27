@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_hestia_questions_and_answers",
+  "info": {
+    "name": "QuestionsAndAnswers",
+    "icon": "question"
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "string"
+    },
+    "Answer": {
+      "type": "text"
+    }
+  }
+}

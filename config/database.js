@@ -1,3 +1,8 @@
+var database = {
+  defaultConnection: 'default',
+  connections: {}
+};
+
 if (process.env.ENV === 'production') {
   database.connections.default = {
     connector: 'mongoose',

@@ -10,7 +10,7 @@ var middleware = {
       enabled: true
     },
     poweredBy: {
-      enabled: true
+      enabled: false
     }
   }
 };
@@ -18,7 +18,7 @@ var middleware = {
 if (process.env.ENV === 'production') {
   middleware.settings.cors = {
     enabled: true,
-    origin: 'https://quentinburgniard.com'
+    origin: 'https://quentinburgniard.com, '
   };
   middleware.settings.logger = {
     level: 'warn'

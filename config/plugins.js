@@ -21,5 +21,5 @@ module.exports = ({ env }) => ({
         Bucket: 'api.quentinburgniard.com',
       },
     },
-  },
+  }
 });

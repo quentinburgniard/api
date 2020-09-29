@@ -20,10 +20,6 @@ if (process.env.ENV === 'production') {
     enabled: true,
     origin: 'https://quentinburgniard.com'
   };
-  middleware.settings.csp = {
-    enabled: true,
-    policy: "default-src 'self' *.digitalleman.com"
-  };
   middleware.settings.logger = {
     level: 'warn'
   };

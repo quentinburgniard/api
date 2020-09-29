@@ -11,20 +11,19 @@ var middleware = {
     },
     poweredBy: {
       enabled: false
+    },
+    responseTime: {
+      enabled: false
+    },
+    xframe: {
+      enabled: false
     }
   }
 };
 
-if (process.env.ENV === 'production') {
-  middleware.settings.cors = {
-    enabled: true,
-    origin: 'https://quentinburgniard.com, '
-  };
+if (process.env.NODE_ENV === 'production') {
   middleware.settings.logger = {
     level: 'warn'
-  };
-  middleware.settings.hsts = {
-    enabled: true
   };
 } else {
 

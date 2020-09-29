@@ -3,15 +3,15 @@ var database = {
   connections: {}
 };
 
-if (process.env.ENV === 'production') {
+if (process.env.NODE_ENV === 'production') {
   database.connections.default = {
     connector: 'mongoose',
     settings: {
       database: 'api',
-      username: process.env.API_DATA_USER,
-      password: process.env.API_DATA_PASSWORD,
+      username: process.env.DATA_USER,
+      password: process.env.DATA_PASSWORD,
       port: 27017,
-      host: 'api-data'
+      host: process.env.DATA_SERVICE
     },
     options: {}
   };

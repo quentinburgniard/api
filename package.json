@@ -21,6 +21,7 @@
     "strapi-plugin-content-manager": "3.x",
     "strapi-plugin-content-type-builder": "3.x",
     "strapi-plugin-email": "3.x",
+    "strapi-plugin-graphql": "3.x",
     "strapi-plugin-upload": "3.x",
     "strapi-plugin-users-permissions": "3.x",
     "strapi-provider-email-amazon-ses": "3.x",

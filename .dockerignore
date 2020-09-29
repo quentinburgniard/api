@@ -1,6 +1,8 @@
-.tmp
 .cache
-node_modules
 build
+.env
+exports
+node_modules
 public/uploads/*
 !public/uploads/.gitkeep
+.tmp

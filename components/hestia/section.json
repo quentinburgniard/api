@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_hestia_sections",
+  "info": {
+    "name": "Section",
+    "icon": "indent"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description2": {
+      "type": "richtext"
+    },
+    "Description1": {
+      "type": "richtext"
+    },
+    "Subtitle": {
+      "type": "string"
+    }
+  }
+}

@@ -1,41 +1,40 @@
 {
   "kind": "collectionType",
-  "connection": "default",
   "collectionName": "projects",
   "info": {
-    "name": "project"
+    "name": "Project"
   },
   "options": {
     "increments": true,
     "timestamps": false
   },
   "attributes": {
-    "launchDate": {
-      "type": "date"
-    },
-    "name": {
-      "type": "string",
-      "maxLength": 25
-    },
-    "url": {
+    "Name": {
       "type": "string"
     },
-    "image": {
+    "URL": {
+      "type": "string"
+    },
+    "Image": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
-      "plugin": "upload"
+      "plugin": "upload",
+      "required": false
     },
-    "shortDescription": {
-      "type": "richtext"
+    "ShortDescription": {
+      "type": "text"
     },
-    "longDescription": {
-      "type": "richtext"
+    "LongDescription": {
+      "type": "text"
     },
-    "technicalDescription": {
-      "type": "richtext"
+    "TechnicalDescription": {
+      "type": "text"
+    },
+    "LaunchDate": {
+      "type": "date"
     }
   }
 }

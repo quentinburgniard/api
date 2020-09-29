@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hestia",
+      "handler": "hestia.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hestia",
+      "handler": "hestia.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hestia",
+      "handler": "hestia.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

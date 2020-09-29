@@ -1,9 +1,0 @@
-{
-  "port": "1337",
-  "admin": {
-    "auth": {
-      "secret": "test"
-    },
-    "autoOpen": true
-  }
-}

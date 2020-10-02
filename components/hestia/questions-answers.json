@@ -1,15 +1,15 @@
 {
-  "collectionName": "components_hestia_questions_and_answers",
+  "collectionName": "hestiaQuestionsAnswers",
   "info": {
-    "name": "QuestionsAndAnswers",
+    "name": "QuestionsAnswers",
     "icon": "question"
   },
   "options": {},
   "attributes": {
-    "Question": {
+    "question": {
       "type": "string"
     },
-    "Answer": {
+    "answer": {
       "type": "text"
     }
   }

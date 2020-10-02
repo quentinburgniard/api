@@ -1,22 +1,22 @@
 {
-  "collectionName": "components_hestia_sections",
+  "collectionName": "hestiaSections",
   "info": {
     "name": "Section",
     "icon": "indent"
   },
   "options": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Description2": {
-      "type": "richtext"
+    "description1": {
+      "type": "text"
     },
-    "Description1": {
-      "type": "richtext"
-    },
-    "Subtitle": {
+    "subsection": {
       "type": "string"
+    },
+    "description2": {
+      "type": "text"
     }
   }
 }

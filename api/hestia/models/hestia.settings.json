@@ -6,33 +6,34 @@
   },
   "options": {
     "increments": true,
+    "populateCreatorFields": false,
     "timestamps": true
   },
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Sections": {
+    "subtitle": {
+      "type": "richtext"
+    },
+    "sections": {
       "type": "component",
       "repeatable": true,
       "component": "hestia.section"
     },
-    "Subtitle": {
-      "type": "richtext"
-    },
-    "QuestionsAndAnswers": {
+    "questionsAnswers": {
       "type": "component",
       "repeatable": true,
-      "component": "hestia.questions-and-answers"
+      "component": "hestia.questions-answers"
     },
-    "ContactTitle": {
+    "contactMessage": {
       "type": "string"
     },
-    "Email": {
+    "phone": {
+      "type": "string"
+    },
+    "email": {
       "type": "email"
-    },
-    "Phonenumber": {
-      "type": "string"
     }
   }
 }

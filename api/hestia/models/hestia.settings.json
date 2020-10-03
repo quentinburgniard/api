@@ -16,6 +16,14 @@
     "subtitle": {
       "type": "richtext"
     },
+    "logo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload"
+    },
     "sections": {
       "type": "component",
       "repeatable": true,

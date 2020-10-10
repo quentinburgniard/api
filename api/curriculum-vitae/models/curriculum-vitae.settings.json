@@ -1,13 +1,13 @@
 {
   "kind": "collectionType",
-  "connection": "default",
   "collectionName": "curriculumVitaes",
   "info": {
     "name": "curriculumVitae"
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "populateCreatorFields": false,
+    "timestamps": false
   },
   "attributes": {
     "location": {

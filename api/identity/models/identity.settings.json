@@ -1,46 +1,37 @@
 {
   "kind": "collectionType",
-  "connection": "default",
   "collectionName": "identities",
   "info": {
-    "name": "identity"
+    "name": "Identity"
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "populateCreatorFields": false,
+    "timestamps": false
   },
   "attributes": {
-    "picture": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": true
+    "firstName": {
+      "type": "string"
     },
-    "birthdate": {
-      "type": "date",
-      "required": true
+    "lastName": {
+      "type": "string"
+    },
+    "profession": {
+      "type": "string"
     },
     "phoneNumber": {
-      "type": "string",
-      "maxLength": 15
+      "type": "string"
     },
     "email": {
       "type": "email"
     },
-    "profession": {
-      "type": "string",
-      "required": false
+    "birthdate": {
+      "type": "date"
     },
-    "firstName": {
-      "type": "string",
-      "required": true,
-      "unique": false,
-      "maxLength": 15
-    },
-    "lastName": {
-      "type": "string",
-      "required": true,
-      "maxLength": 15
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
     }
   }
 }

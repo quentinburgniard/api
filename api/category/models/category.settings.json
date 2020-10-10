@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Category"
+  },
+  "options": {
+    "increments": true,
+    "populateCreatorFields": false,
+    "timestamps": false
+  },
+  "attributes": {
+    "slug": {
+      "type": "string"
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "en",
+        "fr"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "mainProject": {
+      "via": "mainCategory",
+      "collection": "project"
+    },
+    "project": {
+      "via": "category",
+      "collection": "project"
+    }
+  }
+}

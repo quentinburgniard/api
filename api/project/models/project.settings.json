@@ -6,16 +6,17 @@
   },
   "options": {
     "increments": true,
+    "populateCreatorFields": false,
     "timestamps": false
   },
   "attributes": {
-    "Name": {
+    "title": {
       "type": "string"
     },
-    "URL": {
-      "type": "string"
+    "launchDate": {
+      "type": "date"
     },
-    "Image": {
+    "image": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -24,17 +25,29 @@
       "plugin": "upload",
       "required": false
     },
-    "ShortDescription": {
-      "type": "text"
+    "shortDescription": {
+      "type": "richtext"
     },
-    "LongDescription": {
-      "type": "text"
+    "longDescription": {
+      "type": "richtext"
     },
-    "TechnicalDescription": {
-      "type": "text"
+    "technicalDescription": {
+      "type": "richtext"
     },
-    "LaunchDate": {
-      "type": "date"
+    "portfolio": {
+      "collection": "portfolio",
+      "via": "project",
+      "dominant": true
+    },
+    "mainCategory": {
+      "model": "category",
+      "via": "mainProject"
+    },
+    "category": {
+      "collection": "category",
+      "via": "project",
+      "dominant": true
     }
+
   }
 }

@@ -6,12 +6,41 @@
   },
   "options": {
     "increments": true,
+    "populateCreatorFields": false,
     "timestamps": false
   },
   "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "pageName": {
+      "type": "string"
+    },
+    "pageType": {
+      "type": "string"
+    },
     "title": {
-      "type": "string",
-      "maxLength": 25
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "section": {
+      "type": "component",
+      "repeatable": true,
+      "component": "portfolio.section"
+    },
+    "skill": {
+      "type": "component",
+      "repeatable": true,
+      "component": "portfolio.skill"
+    },
+    "project": {
+      "via": "portfolio",
+      "collection": "project"
     }
   }
 }

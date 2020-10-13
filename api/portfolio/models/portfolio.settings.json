@@ -11,7 +11,14 @@
   },
   "attributes": {
     "slug": {
-      "type": "uid"
+      "type": "string"
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "en",
+        "fr"
+      ]
     },
     "pageName": {
       "type": "string"

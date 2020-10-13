@@ -17,12 +17,13 @@
       "type": "richtext"
     },
     "logo": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
-      "plugin": "upload"
+      "plugin": "upload",
+      "required": false
     },
     "sections": {
       "type": "component",

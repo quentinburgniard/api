@@ -10,13 +10,13 @@
       "type": "string"
     },
     "description1": {
-      "type": "text"
+      "type": "richtext"
     },
     "subsection": {
       "type": "string"
     },
     "description2": {
-      "type": "text"
+      "type": "richtext"
     }
   }
 }

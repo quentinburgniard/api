@@ -1,16 +1,14 @@
 module.exports = ({ env }) => ({	
   email: {	
-    provider: 'amazon-ses',	
+    provider: 'sendgrid',	
     providerOptions: {	
-      key: env('AWS_USER'),	
-      secret: env('AWS_PASSWORD'),	
-      amazon: 'https://email.eu-central-1.amazonaws.com',	
+      apiKey: env('SENDGRID_TOKEN')
     },	
     settings: {	
-      defaultFrom: 'api@digitalleman.com',	
-      defaultReplyTo: 'contact@digitalleman.com',	
-    },	
-  },	
+      defaultFrom: 'bot@digitalleman.com',	
+      defaultReplyTo: 'hello@digitalleman.com'
+    }
+  },
   upload: {	
     provider: 'aws-s3',	
     providerOptions: {	

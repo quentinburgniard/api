@@ -14,12 +14,13 @@ module.exports = ({ env }) => ({
   upload: {	
     provider: 'aws-s3',	
     providerOptions: {	
-      accessKeyId: env('AWS_USER'),	
+      accessKeyId: env('AWS_USER'),
+      endpoint: 'https://fra1.digitaloceanspaces.com',
+      region: 'fra1',
       secretAccessKey: env('AWS_PASSWORD'),	
-      region: 'eu-central-1',	
       params: {	
-        Bucket: 'api.quentinburgniard.com',	
-      },	
-    },	
+        Bucket: 'digitalleman'
+      }
+    }	
   }	
 });

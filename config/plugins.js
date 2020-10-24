@@ -12,10 +12,10 @@ module.exports = ({ env }) => ({
   upload: {	
     provider: 'aws-s3',	
     providerOptions: {	
-      accessKeyId: env('AWS_USER'),
+      accessKeyId: env('DIGITALOCEAN_USER'),
       endpoint: 'https://fra1.digitaloceanspaces.com',
       region: 'fra1',
-      secretAccessKey: env('AWS_PASSWORD'),	
+      secretAccessKey: env('DIGITALOCEAN_PASSWORD'),	
       params: {	
         Bucket: 'digitalleman'
       }

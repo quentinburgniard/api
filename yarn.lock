@@ -1330,6 +1330,31 @@
   resolved "https://registry.yarnpkg.com/@sailshq/lodash/-/lodash-3.10.4.tgz#2299648a81a67f4c6ee222c6cf8e261bd9c3fa50"
   integrity sha512-YXJqp9gdHcZKAmBY/WnwFpPtNQp2huD/ME2YMurH2YHJvxrVzYsmpKw/pb7yINArRpp8E++fwbQd3ajYXGA45Q==
 
+"@sendgrid/client@^6.4.0":
+  version "6.5.5"
+  resolved "https://registry.yarnpkg.com/@sendgrid/client/-/client-6.5.5.tgz#66cf569445d98a795998a894bb432a9939ead7c3"
+  integrity sha512-Nbfgo94gbWSL8PIgJfuHoifyOJJepvV8NQkkglctAEfb1hyozKhrzE6v1kPG/z4j0RodaTtXD5LJj/t0q/VhLA==
+  dependencies:
+    "@sendgrid/helpers" "^6.5.5"
+    "@types/request" "^2.48.4"
+    request "^2.88.0"
+
+"@sendgrid/helpers@^6.4.0", "@sendgrid/helpers@^6.5.5":
+  version "6.5.5"
+  resolved "https://registry.yarnpkg.com/@sendgrid/helpers/-/helpers-6.5.5.tgz#de6de9b94794fbf834b4f66a7d44af84bf736459"
+  integrity sha512-uRFEanalfss5hDsuzVXZ1wm7i7eEXHh1py80piOXjobiQ+MxmtR19EU+gDSXZ+uMcEehBGhxnb7QDNN0q65qig==
+  dependencies:
+    chalk "^2.0.1"
+    deepmerge "^4.2.2"
+
+"@sendgrid/mail@6.4.0":
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/@sendgrid/mail/-/mail-6.4.0.tgz#21d022f7fae57dcdc5910eeca5ed318df21e5f51"
+  integrity sha512-pVzbqbxhZ4FUN6iSIksRLtyXRPurrcee1i0noPDStDCLlHVwUR+TofeeKIFWGpIvbbk5UR6S6iV/U5ie8Kdblw==
+  dependencies:
+    "@sendgrid/client" "^6.4.0"
+    "@sendgrid/helpers" "^6.4.0"
+
 "@sentry/core@5.24.2":
   version "5.24.2"
   resolved "https://registry.yarnpkg.com/@sentry/core/-/core-5.24.2.tgz#1724652855c0887a690c3fc6acd2519d4072b511"
@@ -1428,6 +1453,11 @@
   dependencies:
     "@types/connect" "*"
     "@types/node" "*"
+
+"@types/caseless@*":
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/@types/caseless/-/caseless-0.12.2.tgz#f65d3d6389e01eeb458bd54dc8f52b95a9463bc8"
+  integrity sha512-6ckxMjBBD8URvjB6J3NcnuAn5Pkl7t3TizAg+xdlzzQGSPSmBcXf8KoIH0ua/i+tio+ZRUHEXp0HEmvaR4kt0w==
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
@@ -1649,6 +1679,16 @@
     "@types/prop-types" "*"
     csstype "^3.0.2"
 
+"@types/request@^2.48.4":
+  version "2.48.5"
+  resolved "https://registry.yarnpkg.com/@types/request/-/request-2.48.5.tgz#019b8536b402069f6d11bee1b2c03e7f232937a0"
+  integrity sha512-/LO7xRVnL3DxJ1WkPGDQrp4VTV1reX9RkC85mJ+Qzykj2Bdw+mG15aAfDahc76HtknjzE16SX/Yddn6MxVbmGQ==
+  dependencies:
+    "@types/caseless" "*"
+    "@types/node" "*"
+    "@types/tough-cookie" "*"
+    form-data "^2.5.0"
+
 "@types/serve-static@*":
   version "1.13.5"
   resolved "https://registry.yarnpkg.com/@types/serve-static/-/serve-static-1.13.5.tgz#3d25d941a18415d3ab092def846e135a08bbcf53"
@@ -1656,6 +1696,11 @@
   dependencies:
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
+
+"@types/tough-cookie@*":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-4.0.0.tgz#fef1904e4668b6e5ecee60c52cc6a078ffa6697d"
+  integrity sha512-I99sngh224D0M7XgW1s120zxCt3VYQ3IQsuw3P3jbq5GG4yc79+ZjyKznyOGIQrflfylLgcfekeZW/vk0yng6A==
 
 "@types/ws@^7.0.0":
   version "7.2.7"
@@ -2373,11 +2418,6 @@ aws-sign2@~0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
   integrity sha1-tG6JCTSpWR8tL2+G1+ap8bP+dqg=
-
-aws4@1.9.1:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.9.1.tgz#7e33d8f7d449b3f673cd72deb9abdc552dbe528e"
-  integrity sha512-wMHVg2EOHaMRxbzgFJ9gtjOOCrI80OHLG14rxi28XwOW8ux6IiEbRCGGGqCtdAIg4FQCbW20k9RsT4y3gJlFug==
 
 aws4@^1.8.0:
   version "1.10.1"
@@ -3591,7 +3631,7 @@ debug@*, debug@4, debug@^4.1.0, debug@^4.1.1:
   dependencies:
     ms "2.1.2"
 
-debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.9:
+debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
@@ -3679,6 +3719,11 @@ deepmerge@^2.1.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-2.2.1.tgz#5d3ff22a01c00f645405a2fbc17d0778a1801170"
   integrity sha512-R9hc1Xa/NOBi9WRVUWg19rl1UB7Tt4kuPd+thNJgFZoxXsTz7ncaPaeIm+40oSGuP33DfMb4sZt1QIGiJzC4EA==
+
+deepmerge@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
+  integrity sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==
 
 default-gateway@^4.2.0:
   version "4.2.0"
@@ -4560,6 +4605,11 @@ fn-name@~2.0.1:
   resolved "https://registry.yarnpkg.com/fn-name/-/fn-name-2.0.1.tgz#5214d7537a4d06a4a301c0cc262feb84188002e7"
   integrity sha1-UhTXU3pNBqSjAcDMJi/rhBiAAuc=
 
+fn-name@~3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/fn-name/-/fn-name-3.0.0.tgz#0596707f635929634d791f452309ab41558e3c5c"
+  integrity sha512-eNMNr5exLoavuAMhIUVsOKF79SWd/zG104ef6sxBTSw+cZc6BXdQXDvYcGvp0VbxVVSp1XDUNoz7mg1xMtSznA==
+
 follow-redirects@1.5.10:
   version "1.5.10"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
@@ -4593,6 +4643,15 @@ forever-agent@~0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
   integrity sha1-+8cfDEGt6zf5bFd60e1C2P2sypE=
+
+form-data@^2.5.0:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/form-data/-/form-data-2.5.1.tgz#f2cbec57b5e59e23716e128fe44d4e5dd23895f4"
+  integrity sha512-m21N3WOmEEURgk6B9GLOE4RuWOFf28Lhh9qGYeNlGq4VDXUlJy2th2slBNU8Gp8EzloYZOibZJ7t5ecIrFSjVA==
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.6"
+    mime-types "^2.1.12"
 
 form-data@^3.0.0:
   version "3.0.0"
@@ -7178,16 +7237,6 @@ node-schedule@1.3.2:
     long-timeout "0.1.1"
     sorted-array-functions "^1.0.0"
 
-node-ses@^3.0.0:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/node-ses/-/node-ses-3.0.2.tgz#0fccc2f92164f5431b7f6c9a39b139b1bd359911"
-  integrity sha512-x2yxL/g7S3mKITJWj53zUfbMJO6u5nZxoptiZPhwEWf0+jjaRW66pdbIMpMq+6FgCOi9nH/0PmdZi/d08AEozA==
-  dependencies:
-    aws4 "1.9.1"
-    debug "^2.6.9"
-    request "2.88.2"
-    xml2js "^0.4.19"
-
 nodemailer-fetch@1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/nodemailer-fetch/-/nodemailer-fetch-1.6.0.tgz#79c4908a1c0f5f375b73fe888da9828f6dc963a4"
@@ -7958,6 +8007,11 @@ property-expr@^1.5.0:
   resolved "https://registry.yarnpkg.com/property-expr/-/property-expr-1.5.1.tgz#22e8706894a0c8e28d58735804f6ba3a3673314f"
   integrity sha512-CGuc0VUTGthpJXL36ydB6jnbyOf/rAHFvmVrJlH+Rg0DqqLFQGAP6hIaxD/G0OAmBJPhXDHuEJigrp0e0wFV6g==
 
+property-expr@^2.0.2:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/property-expr/-/property-expr-2.0.4.tgz#37b925478e58965031bb612ec5b3260f8241e910"
+  integrity sha512-sFPkHQjVKheDNnPvotjQmm3KD3uk1fWKUN7CrpdbwmUx3CrG3QiM8QpTSimvig5vTXmTvjz7+TDvXOI9+4rkcg==
+
 proxy-addr@~2.0.5:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.6.tgz#fdc2336505447d3f2f2c638ed272caf614bbb2bf"
@@ -8722,7 +8776,7 @@ request-oauth@^1.0.0:
     qs "^6.9.3"
     uuid "^3.4.0"
 
-request@2.88.2, request@^2.83.0, request@^2.87.0:
+request@^2.83.0, request@^2.87.0, request@^2.88.0:
   version "2.88.2"
   resolved "https://registry.yarnpkg.com/request/-/request-2.88.2.tgz#d73c918731cb5a87da047e207234146f664d12b3"
   integrity sha512-MsvtOrfG9ZcrOwAW+Qi+F6HbD0CWXEh9ou77uOb7FM2WPhwT7smM833PzanhJLsgXjN89Ir6V2PczXNnMpwKhw==
@@ -9853,13 +9907,13 @@ strapi-plugin-users-permissions@3.x:
     strapi-utils "3.1.6"
     uuid "^3.1.0"
 
-strapi-provider-email-amazon-ses@3.x:
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/strapi-provider-email-amazon-ses/-/strapi-provider-email-amazon-ses-3.1.6.tgz#6dc213a154c3f22ff3bf79742f1a8d9db9b6ee14"
-  integrity sha512-Ii/MJdZwV/a+lDvC3Q+M5fjWlyYONaFvFoM+b/OYSs0W+4xUnlgjmOU14NFEybLxGNAHk8kfIJXHIjAIojKIFA==
+strapi-provider-email-sendgrid@^3.2.5:
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/strapi-provider-email-sendgrid/-/strapi-provider-email-sendgrid-3.2.5.tgz#6211e52d681f0c997883089dd6dbe3c6fc637e51"
+  integrity sha512-SsAeWz4B7YoRDV7nN7lBfk3LpuFCLzADRU/s+vvHmGEiIQPKl084PLdQ+Kj+uAiO7MiXn3zB4I0amXB1gHVRvg==
   dependencies:
-    node-ses "^3.0.0"
-    strapi-utils "3.1.6"
+    "@sendgrid/mail" "6.4.0"
+    strapi-utils "3.2.5"
 
 strapi-provider-email-sendmail@3.1.6:
   version "3.1.6"
@@ -9893,6 +9947,18 @@ strapi-utils@3.1.6, strapi-utils@3.x:
     pino "^4.7.1"
     pluralize "^8.0.0"
     yup "0.28.1"
+
+strapi-utils@3.2.5:
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/strapi-utils/-/strapi-utils-3.2.5.tgz#9e757ca9009c2211eec491514b2f0f3c7865f035"
+  integrity sha512-d9CuD/DLV9ppmjtxpXtuZCl9MMnz8jIJxw7DS8t6By0DRl31CrM7lsNUo4iXj0YSFLa0NCotVYUozcY+vtDwnw==
+  dependencies:
+    "@sindresorhus/slugify" "1.1.0"
+    date-fns "^2.8.1"
+    lodash "4.17.19"
+    pino "^4.7.1"
+    pluralize "^8.0.0"
+    yup "0.29.3"
 
 strapi@3.x:
   version "3.1.6"
@@ -10171,6 +10237,11 @@ symbol-observable@^1.0.4, symbol-observable@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
   integrity sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==
+
+synchronous-promise@^2.0.13:
+  version "2.0.15"
+  resolved "https://registry.yarnpkg.com/synchronous-promise/-/synchronous-promise-2.0.15.tgz#07ca1822b9de0001f5ff73595f3d08c4f720eb8e"
+  integrity sha512-k8uzYIkIVwmT+TcglpdN50pS2y1BDcUnBPK9iJeGu0Pl1lOI8pD6wtzgw91Pjpe+RxtTncw32tLxs/R0yNL2Mg==
 
 synchronous-promise@^2.0.6:
   version "2.0.13"
@@ -11003,19 +11074,6 @@ xml2js@0.4.19:
     sax ">=0.6.0"
     xmlbuilder "~9.0.1"
 
-xml2js@^0.4.19:
-  version "0.4.23"
-  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.23.tgz#a0c69516752421eb2ac758ee4d4ccf58843eac66"
-  integrity sha512-ySPiMjM0+pLDftHgXY4By0uswI3SPKLDw/i3UXbnO8M/p28zqexCUoPmQFrYD+/1BzhGJSs2i1ERWKJAtiLrug==
-  dependencies:
-    sax ">=0.6.0"
-    xmlbuilder "~11.0.0"
-
-xmlbuilder@~11.0.0:
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-11.0.1.tgz#be9bae1c8a046e76b31127726347d0ad7002beb3"
-  integrity sha512-fDlsI/kFEx7gLvbecc0/ohLG50fugQp8ryHzMTuW9vSa1GJ0XYWKnhsUx7oie3G98+r56aTQIUB4kht42R3JvA==
-
 xmlbuilder@~9.0.1:
   version "9.0.7"
   resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-9.0.7.tgz#132ee63d2ec5565c557e20f4c22df9aca686b10d"
@@ -11089,6 +11147,19 @@ yup@0.28.1:
     lodash-es "^4.17.11"
     property-expr "^1.5.0"
     synchronous-promise "^2.0.6"
+    toposort "^2.0.2"
+
+yup@0.29.3:
+  version "0.29.3"
+  resolved "https://registry.yarnpkg.com/yup/-/yup-0.29.3.tgz#69a30fd3f1c19f5d9e31b1cf1c2b851ce8045fea"
+  integrity sha512-RNUGiZ/sQ37CkhzKFoedkeMfJM0vNQyaz+wRZJzxdKE7VfDeVKH8bb4rr7XhRLbHJz5hSjoDNwMEIaKhuMZ8gQ==
+  dependencies:
+    "@babel/runtime" "^7.10.5"
+    fn-name "~3.0.0"
+    lodash "^4.17.15"
+    lodash-es "^4.17.11"
+    property-expr "^2.0.2"
+    synchronous-promise "^2.0.13"
     toposort "^2.0.2"
 
 yup@^0.27.0:

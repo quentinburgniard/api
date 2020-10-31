@@ -20,12 +20,6 @@
         "fr"
       ]
     },
-    "pageName": {
-      "type": "string"
-    },
-    "pageType": {
-      "type": "string"
-    },
     "title": {
       "type": "string"
     },

@@ -1,8 +1,7 @@
 {
-  "connection": "default",
   "collectionName": "languages",
   "info": {
-    "name": "language",
+    "name": "Language",
     "icon": "bold"
   },
   "options": {},

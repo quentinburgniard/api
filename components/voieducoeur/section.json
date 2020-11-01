@@ -1,15 +1,12 @@
 {
-  "collectionName": "portfolioSections",
+  "collectionName": "voieDuCoeurSections",
   "info": {
     "name": "Section",
-    "icon": "layer-group"
+    "icon": "indent"
   },
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
-    },
-    "subtitle": {
       "type": "string"
     },
     "description": {
@@ -21,7 +18,8 @@
       "allowedTypes": [
         "images"
       ],
-      "plugin": "upload"
+      "plugin": "upload",
+      "required": false
     }
   }
 }

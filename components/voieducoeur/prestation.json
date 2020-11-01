@@ -1,0 +1,70 @@
+{
+  "collectionName": "components_voieducoeur_prestations",
+  "info": {
+    "name": "prestation",
+    "icon": "th"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "bell",
+        "bookmark",
+        "building",
+        "calendar",
+        "circle",
+        "clipboard",
+        "clock",
+        "clone",
+        "comment",
+        "comments",
+        "compass",
+        "copy",
+        "copyright",
+        "dizzy",
+        "edit",
+        "envelope",
+        "eye",
+        "file",
+        "flag",
+        "flushed",
+        "folder",
+        "frown",
+        "futbol",
+        "gem",
+        "grimace",
+        "grin",
+        "handshake",
+        "hdd",
+        "heart",
+        "hospital",
+        "hourglass",
+        "image",
+        "images",
+        "keyboard",
+        "kiss",
+        "laugh",
+        "lemon",
+        "lightbulb",
+        "map",
+        "meh",
+        "moon",
+        "newspaper",
+        "registered",
+        "save",
+        "smile",
+        "snowflake",
+        "square",
+        "star",
+        "sun",
+        "surprise",
+        "tired",
+        "user"
+      ]
+    }
+  }
+}

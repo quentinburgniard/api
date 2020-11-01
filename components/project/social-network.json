@@ -1,8 +1,7 @@
 {
-  "connection": "default",
   "collectionName": "socialNetworks",
   "info": {
-    "name": "socialNetwork",
+    "name": "Social Network",
     "icon": "address-card"
   },
   "options": {},

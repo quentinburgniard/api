@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/voieducoeur",
+      "handler": "voieducoeur.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/voieducoeur",
+      "handler": "voieducoeur.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/voieducoeur",
+      "handler": "voieducoeur.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

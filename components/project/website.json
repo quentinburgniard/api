@@ -1,8 +1,7 @@
 {
-  "connection": "default",
   "collectionName": "websites",
   "info": {
-    "name": "website",
+    "name": "Website",
     "icon": "laptop"
   },
   "options": {},

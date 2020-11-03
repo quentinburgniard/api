@@ -11,8 +11,7 @@
   },
   "attributes": {
     "slug": {
-      "type": "string",
-      "unique": false
+      "type": "string"
     },
     "language": {
       "type": "enumeration",

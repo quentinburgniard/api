@@ -43,6 +43,9 @@
         "unit",
         "l"
       ]
+    },
+    "date": {
+      "type": "date"
     }
   }
 }

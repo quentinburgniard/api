@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productPrices",
+  "info": {
+    "name": "productPrice",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "populateCreatorFields": false,
+    "timestamps": false,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "product": {
+      "type": "string",
+      "required": false
+    },
+    "price": {
+      "type": "float"
+    },
+    "vta": {
+      "type": "enumeration",
+      "enum": [
+        "standard23",
+        "reduced13",
+        "reduced6"
+      ]
+    },
+    "reference": {
+      "type": "boolean"
+    },
+    "shop": {
+      "type": "enumeration",
+      "enum": [
+        "makro"
+      ]
+    },
+    "unit": {
+      "type": "enumeration",
+      "enum": [
+        "kg",
+        "unit",
+        "l"
+      ]
+    }
+  }
+}

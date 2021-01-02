@@ -13,8 +13,7 @@
   },
   "attributes": {
     "product": {
-      "type": "string",
-      "required": false
+      "type": "string"
     },
     "price": {
       "type": "float"
@@ -46,6 +45,9 @@
     },
     "date": {
       "type": "date"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }

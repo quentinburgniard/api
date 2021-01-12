@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ambassadors",
+  "info": {
+    "name": "Ambassador"
+  },
+  "options": {
+    "increments": true,
+    "populateCreatorFields": false,
+    "timestamps": false
+  },
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "coupon": {
+      "type": "string"
+    }
+  }
+}

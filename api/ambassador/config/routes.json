@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ambassadors",
+      "handler": "ambassador.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ambassadors/count",
+      "handler": "ambassador.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ambassadors/:id",
+      "handler": "ambassador.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ambassadors",
+      "handler": "ambassador.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ambassadors/:id",
+      "handler": "ambassador.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ambassadors/:id",
+      "handler": "ambassador.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

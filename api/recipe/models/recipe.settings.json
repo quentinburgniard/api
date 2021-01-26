@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "name": "recipe"
+  },
+  "options": {
+    "increments": true,
+    "populateCreatorFields": false,
+    "timestamps": false,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sku": {
+      "type": "integer",
+      "required": true
+    },
+    "ingredient": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipe.ingredient"
+    }
+  }
+}

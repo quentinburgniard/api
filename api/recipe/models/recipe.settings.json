@@ -16,7 +16,7 @@
       "required": true
     },
     "sku": {
-      "type": "integer",
+      "type": "string",
       "required": true
     },
     "ingredient": {

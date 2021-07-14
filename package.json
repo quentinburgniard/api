@@ -10,8 +10,8 @@
     "strapi": "strapi"
   },
   "devDependencies": {
-    "knex": "^0.20.0",
-    "sqlite3": "^5.0.1",
+    "knex": "0.x",
+    "sqlite3": "5.x",
     "strapi-connector-bookshelf": "3.x"
   },
   "dependencies": {
@@ -33,10 +33,5 @@
   },
   "strapi": {
     "uuid": "929f27f1-5cda-4b2a-8e02-1cadd57a3f0b"
-  },
-  "engines": {
-    "node": ">=10.0.0",
-    "npm": ">=6.0.0"
-  },
-  "license": "MIT"
+  }
 }

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workflows",
+  "info": {
+    "name": "Workflow",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": false,
+    "draftAndPublish": false,
+    "populateCreatorFields": false
+  },
+  "attributes": {
+    "step": {
+      "type": "component",
+      "repeatable": true,
+      "component": "casasogra.step"
+    },
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

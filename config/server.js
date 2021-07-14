@@ -5,7 +5,7 @@ var server = {
   url: process.env.URL ? process.env.URL : '',
   admin: {
     auth: {
-      secret: process.env.ADMIN_TOKEN
+      secret: process.env.ADMIN_TOKEN || 'f6adc15b-3896-445e-ba1a-2dc4227e5115'
     },
   }
 };

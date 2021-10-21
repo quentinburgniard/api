@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tv",
+      "handler": "tv.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tv",
+      "handler": "tv.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tv",
+      "handler": "tv.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

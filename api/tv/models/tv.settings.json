@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "tvs",
+  "info": {
+    "name": "TV"
+  },
+  "options": {
+    "increments": false,
+    "timestamps": false,
+    "populateCreatorFields": false,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "medias": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload"
+    }
+  }
+}

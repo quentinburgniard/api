@@ -20,6 +20,9 @@
         "fr"
       ]
     },
+    "button": {
+      "type": "string"
+    },
     "title": {
       "type": "string"
     },

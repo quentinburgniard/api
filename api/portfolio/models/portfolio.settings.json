@@ -26,9 +26,6 @@
     "name": {
       "type": "string"
     },
-    "button": {
-      "type": "string"
-    },
     "description": {
       "type": "richtext"
     },

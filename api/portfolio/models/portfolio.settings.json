@@ -46,8 +46,7 @@
       "collection": "project"
     },
     "reference": {
-      "type": "uid",
-      "targetField": "slug"
+      "type": "uid"
     }
   }
 }

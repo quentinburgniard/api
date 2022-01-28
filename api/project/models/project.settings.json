@@ -68,8 +68,7 @@
       "dominant": true
     },
     "reference": {
-      "type": "uid",
-      "targetField": "slug"
+      "type": "uid"
     }
   }
 }

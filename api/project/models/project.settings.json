@@ -59,12 +59,12 @@
       "dominant": true
     },
     "mainCategory": {
-      "model": "category",
-      "via": "mainProject"
+      "via": "mainProject",
+      "model": "category"
     },
     "category": {
-      "collection": "category",
       "via": "project",
+      "collection": "category",
       "dominant": true
     },
     "reference": {

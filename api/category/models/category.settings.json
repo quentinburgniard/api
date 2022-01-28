@@ -2,12 +2,14 @@
   "kind": "collectionType",
   "collectionName": "categories",
   "info": {
-    "name": "Category"
+    "name": "Category",
+    "description": ""
   },
   "options": {
     "increments": true,
     "populateCreatorFields": false,
-    "timestamps": false
+    "timestamps": false,
+    "draftAndPublish": false
   },
   "attributes": {
     "slug": {
@@ -33,6 +35,9 @@
     "project": {
       "via": "category",
       "collection": "project"
+    },
+    "reference": {
+      "type": "uid"
     }
   }
 }

@@ -2,12 +2,14 @@
   "kind": "collectionType",
   "collectionName": "projects",
   "info": {
-    "name": "Project"
+    "name": "Project",
+    "description": ""
   },
   "options": {
     "increments": true,
     "populateCreatorFields": false,
-    "timestamps": false
+    "timestamps": false,
+    "draftAndPublish": false
   },
   "attributes": {
     "slug": {
@@ -39,7 +41,8 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "shortDescription": {
       "type": "richtext"
@@ -51,8 +54,8 @@
       "type": "richtext"
     },
     "portfolio": {
-      "collection": "portfolio",
       "via": "project",
+      "collection": "portfolio",
       "dominant": true
     },
     "mainCategory": {
@@ -63,7 +66,10 @@
       "collection": "category",
       "via": "project",
       "dominant": true
+    },
+    "reference": {
+      "type": "uid",
+      "targetField": "slug"
     }
-
   }
 }

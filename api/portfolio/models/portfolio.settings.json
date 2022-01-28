@@ -2,12 +2,14 @@
   "kind": "collectionType",
   "collectionName": "portfolios",
   "info": {
-    "name": "Portfolio"
+    "name": "Portfolio",
+    "description": ""
   },
   "options": {
     "increments": true,
     "populateCreatorFields": false,
-    "timestamps": false
+    "timestamps": false,
+    "draftAndPublish": false
   },
   "attributes": {
     "slug": {
@@ -42,6 +44,10 @@
     "project": {
       "via": "portfolio",
       "collection": "project"
+    },
+    "reference": {
+      "type": "uid",
+      "targetField": "slug"
     }
   }
 }

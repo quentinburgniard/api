@@ -37,6 +37,17 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "metaDescription": {
+      "type": "text",
+      "minLength": 50,
+      "maxLength": 150
+    },
+    "slug": {
+      "type": "string",
+      "maxLength": 30,
+      "default": "slug",
+      "required": true
     }
   }
 }

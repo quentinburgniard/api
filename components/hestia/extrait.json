@@ -1,0 +1,15 @@
+{
+  "collectionName": "extraits",
+  "info": {
+    "name": "extrait",
+    "icon": "yin-yang",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "extrait": {
+      "type": "string",
+      "maxLength": 150
+    }
+  }
+}

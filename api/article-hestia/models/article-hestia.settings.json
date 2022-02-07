@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article_hestias",
+  "info": {
+    "name": "Hestia Article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "hestia.extrait",
+        "hestia.paragraphe"
+      ]
+    },
+    "titre": {
+      "type": "string",
+      "maxLength": 30,
+      "required": true
+    },
+    "categorie": {
+      "type": "string",
+      "maxLength": 30,
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

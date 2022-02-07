@@ -1,0 +1,15 @@
+{
+  "collectionName": "paragraphes",
+  "info": {
+    "name": "paragraphe",
+    "icon": "yin-yang",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "paragraphe": {
+      "type": "text",
+      "maxLength": 550
+    }
+  }
+}

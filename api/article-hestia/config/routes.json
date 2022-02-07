@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/article-hestias",
+      "handler": "article-hestia.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/article-hestias/count",
+      "handler": "article-hestia.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/article-hestias/:id",
+      "handler": "article-hestia.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/article-hestias",
+      "handler": "article-hestia.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/article-hestias/:id",
+      "handler": "article-hestia.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/article-hestias/:id",
+      "handler": "article-hestia.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

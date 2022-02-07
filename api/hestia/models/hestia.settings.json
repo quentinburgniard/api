@@ -2,12 +2,14 @@
   "kind": "singleType",
   "collectionName": "hestias",
   "info": {
-    "name": "Hestia"
+    "name": "Hestia",
+    "description": ""
   },
   "options": {
     "increments": true,
     "populateCreatorFields": false,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "title": {
@@ -22,7 +24,9 @@
       "allowedTypes": [
         "images"
       ],
-      "plugin": "upload"
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     },
     "sections": {
       "type": "component",
@@ -42,6 +46,11 @@
     },
     "email": {
       "type": "email"
+    },
+    "metaDescription": {
+      "type": "text",
+      "minLength": 50,
+      "maxLength": 150
     }
   }
 }

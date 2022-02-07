@@ -25,7 +25,7 @@
     },
     "categorie": {
       "type": "string",
-      "maxLength": 60,
+      "maxLength": 30,
       "required": true
     },
     "image": {

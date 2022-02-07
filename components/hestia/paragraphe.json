@@ -9,7 +9,7 @@
   "attributes": {
     "paragraphe": {
       "type": "text",
-      "maxLength": 550
+      "maxLength": 350
     }
   }
 }

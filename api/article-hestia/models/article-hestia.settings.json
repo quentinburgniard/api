@@ -20,12 +20,12 @@
     },
     "titre": {
       "type": "string",
-      "maxLength": 30,
+      "maxLength": 60,
       "required": true
     },
     "categorie": {
       "type": "string",
-      "maxLength": 30,
+      "maxLength": 60,
       "required": true
     },
     "image": {

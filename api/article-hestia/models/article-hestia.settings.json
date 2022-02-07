@@ -46,7 +46,6 @@
     "slug": {
       "type": "string",
       "maxLength": 30,
-      "default": "slug",
       "required": true
     }
   }

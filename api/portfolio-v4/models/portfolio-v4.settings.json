@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "portfolios_v4",
+  "collectionName": "portfolio",
   "info": {
     "name": "Portfolio v4",
     "description": ""
@@ -34,18 +34,6 @@
     "professionalDescription": {
       "type": "richtext"
     },
-    "project": {
-      "via": "portfolio-v4",
-      "collection": "project"
-    },
-    "technology": {
-      "via": "portfolio-v4-technology",
-      "collection": "category"
-    },
-    "category": {
-      "via": "portfolio-v4-category",
-      "collection": "category"
-    },
     "reference": {
       "type": "uid"
     },
@@ -55,7 +43,24 @@
       "allowedTypes": [
         "images"
       ],
-      "plugin": "upload"
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "categories": {
+      "collection": "category",
+      "via": "categoriesPortfolio",
+      "dominant": true
+    },
+    "technologies": {
+      "collection": "category",
+      "via": "technologiesPortfolio",
+      "dominant": true
+    },
+    "projects": {
+      "collection": "project",
+      "via": "portfolios",
+      "dominant": true
     }
   }
 }

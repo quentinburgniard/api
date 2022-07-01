@@ -67,12 +67,12 @@
       "collection": "category",
       "dominant": true
     },
-    "portfolio-v4": {
-      "via": "project",
-      "collection": "portfolio-v4"
-    },
     "reference": {
       "type": "uid"
+    },
+    "portfolios": {
+      "via": "projects",
+      "collection": "portfolio-v4"
     }
   }
 }

@@ -67,6 +67,10 @@
       "collection": "category",
       "dominant": true
     },
+    "portfolio-v4": {
+      "via": "project",
+      "collection": "portfolio-v4"
+    },
     "reference": {
       "type": "uid"
     }

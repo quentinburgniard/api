@@ -36,8 +36,12 @@
       "via": "category",
       "collection": "project"
     },
-    "portfolio-v4": {
+    "portfolio-v4-category": {
       "via": "category",
+      "collection": "portfolio-v4"
+    },
+    "portfolio-v4-technology": {
+      "via": "technology",
       "collection": "portfolio-v4"
     },
     "reference": {

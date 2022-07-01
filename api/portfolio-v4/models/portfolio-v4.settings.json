@@ -42,11 +42,11 @@
       "collection": "project"
     },
     "technology": {
-      "via": "portfolio-v4",
+      "via": "portfolio-v4-technology",
       "collection": "category"
     },
     "category": {
-      "via": "portfolio-v4",
+      "via": "portfolio-v4-category",
       "collection": "category"
     },
     "reference": {

@@ -58,8 +58,8 @@
       "dominant": true
     },
     "projects": {
-      "collection": "project",
       "via": "portfolios",
+      "collection": "project",
       "dominant": true
     }
   }

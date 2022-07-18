@@ -74,14 +74,14 @@
       "via": "projects",
       "collection": "portfolio-v4"
     },
-    "projects": {
-      "collection": "project",
-      "via": "relatedProjects",
-      "dominant": true
-    },
     "relatedProjects": {
       "collection": "project",
-      "via": "projects"
+      "via": "projects",
+      "dominant": true
+    },
+    "projects": {
+      "collection": "project",
+      "via": "relatedProjects"
     }
   }
 }
